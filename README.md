@@ -23,7 +23,7 @@
 ```javascript
 var mredis = require('mredis');
 //init
-var redis = medis.createClient({
+var redis = mredis.createClient({
   server : ['127.0.0.1:1240', '127.0.0.1:1239'], //redis server addresses
   debug : false,     //debug info, default false
   speedFirst : true, // 如果为true，则每次读取都会选择从redis集群中响应最快的服务读取，反之，则会对所有集群进行轮询(负载均衡)。
